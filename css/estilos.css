@@ -1,0 +1,67 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://img.freepik.com/fotos-premium/ilustracao-do-joystick-do-gamepad-do-controlador-de-jogos-cyberpunk_691560-5812.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor legibilidade. */
+    color: #922f2f;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+}
+
+nav li {
+    margin-right: 30px;
+    display: inline;
+    margin-left: 10px;
+    color:#922f2f;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para melhor legibilidade. */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor legibilidade. */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
