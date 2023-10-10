@@ -53,7 +53,7 @@ section {
     background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para melhor legibilidade. */
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1700px;
     text-align: center;
 }
 
@@ -64,4 +64,10 @@ footer {
     padding: 10px 0;
 }
 
+.parceiros {
+    margin: 30px;
+}
 
+.fundo-parceiro {
+    background-color: black;
+}
