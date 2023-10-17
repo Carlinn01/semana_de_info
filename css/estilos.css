@@ -19,7 +19,8 @@ body {
 
 
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor legibilidade. */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo semi-transparente para melhor legibilidade. */
     color: #922f2f;
     text-align: center;
     padding: 10px 0;
@@ -41,7 +42,7 @@ nav li {
     margin-right: 30px;
     display: inline;
     margin-left: 10px;
-    color:#922f2f;
+    color: #922f2f;
 }
 
 .nav a {
@@ -50,7 +51,8 @@ nav li {
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para melhor legibilidade. */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fundo semi-transparente para melhor legibilidade. */
     padding: 20px;
     margin: 20px auto;
     max-width: 1700px;
@@ -58,7 +60,8 @@ section {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor legibilidade. */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo semi-transparente para melhor legibilidade. */
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -71,3 +74,47 @@ footer {
 .fundo-parceiro {
     background-color: black;
 }
+
+.jogos {
+    width: 33.33%;
+}
+
+/* Sistema de Grid com 12 Colunas */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;}
+.col-4 {
+    width: 33.33%;}
+.col-5 {
+    width: 41.66%;}
+.col-6 {
+    width: 50%;}
+.col-7 {
+    width: 58.33%;}
+.col-8 {
+    width: 66.66%;}
+.col-9 {
+    width: 75%;}
+.col-10 {
+    width: 83.33%;}
+.col-11 {
+    width: 91.66%;}
+.col-12 {
+    width: 100%;}
+
+    .container {
+        width: 100%;
+        max-width: 1200px; /* Largura máxima do container, você pode ajustar conforme necessário */
+        margin: 0 auto; /* Centraliza o container na página */
+        padding: 20px; /* Adiciona algum espaço interno para espaçamento visual */
+      }
+
+
+    
