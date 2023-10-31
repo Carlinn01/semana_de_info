@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +7,49 @@
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
     </head>
     <body>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Logo da Semana Acadêmica">
+        <div class="menu">
+            <header>
+
+                <nav>
+                    <div class="logo">
+                    <img src="logo.png" alt="Logo da Semana Acadêmica">
+                    </div>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#maratona">Maratona</a></li>
+                        <li><a href="#jogos">Jogos Eletrônicos</a></li>
+                        <li><a href="cronograma.html">Cronograma</a></li>
+                        <li><a href="#fotos">Fotos</a></li>
+                        <li><a href="formulário.html">Inscreva-se</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="container">
+            <h1>Cronograma:</h1>
+            <div class="day">
+                <h2>Segunda-feira</h2>
+                <div class="event">
+                    <p>Abertura da semana academica</p>
+                    <img src="img/segunda.png" alt="cronograma segunda Segunda-feira">
+                </div>
             </div>
-            <ul>
-                <li><a href="#parceiros">Parceiros</a></li>
-                <li><a href="#maratona">Maratona</a></li>
-                <li><a href="#jogos">Jogos Eletrônicos</a></li>
-                <li><a href="cronograma.html">Cronograma</a></li>
-                <li><a href="#fotos">Fotos</a></li>
-                <li><a href="formulário.html">Inscreva-se</a></li>
-            </ul>
-        </nav>
-        <h1>Cronograma:</h1>
+            <div class="day">
+                <h2>Terça-feira</h2>
+                <div class="event">
+                    <p>Workshop de JavaScript</p>
+                    <img src="img/terça.png" alt="cronograma Terça-feira">
+                </div>
+            </div>
+            <div class="day">
+                <h2>Quarta-feira</h2>
+                <div class="event">
+                    <p>Desenvolvimento Web Avançado</p>
+                    <img src="img/quarta.png" alt="cronograma Quarta-feira">
+                </div>
+            </div>
+        </div>
     </body>
 </html>
