@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Livros</title>
+    <title>Cadastro para semana info</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <header>
-        <h1>Livraria Fantástica</h1>
+        <h1>Cadastre-se</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="#">Livros</a></li>
-                <li><a href="#">Autores</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
     </header>
@@ -24,62 +22,47 @@
         <section class="container">
             <form>
                 <fieldset>
-                    <legend>Cadastro de Livros</legend>
-            
+                    <legend>Cadastro para semana de info</legend>
+
                     <div class="input-container">
                         <label for="nome">Nome Completo</label>
                         <input type="text" name="Nome" id="Nome" placeholder="Seu Nome Completo" required autofocus>
                     </div>
-            
+
                     <div class="input-container">
                         <label for="Matrícula">Matrícula</label>
-                        <input type="number" name="Matrícula" id="Matrícula" placeholder="Nome do autor" required>
-                    </div>
-                    
-                    <div class="input-container">
-                        <label for="editora">Editora</label>
-                        <input type="text" name="editora" id="editora" placeholder="Editora" required>
+                        <input type="number" name="Matrícula" 
+                        id="Matrícula" placeholder="Matrícula" required
+                        title="Digite sua Matrícula de 10 dígitos">
                     </div>
 
                     <div class="input-container">
-                        <label for="dtpublicacao">Publicação</label>
-                        <input type="date" name="dtpublicacao" id="dtpublicacao" required>
+                        <label for="CPF">CPF</label>
+                        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                        placeholder="Digite seu CPF" required
+                        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                        
                     </div>
 
                     <div class="input-container">
-                        <label>Idioma</label>
-                        <div class="input-check">
-                            <input type="checkbox" name="idioma" value="Português" id="portugues">
-                            <label for="portugues">Português</label>
-                        </div>
-                        <div class="input-check">
-                            <input type="checkbox" name="idioma" value="Inglês" id="ingles">
-                            <label for="ingles">Inglês</label>
-                        </div>
-                        <div class="input-check">
-                            <input type="checkbox" name="idioma" value="Espanhol" id="espanhol">
-                            <label for="espanhol">Espanhol</label>
-                        </div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
 
+                    <p>Sua turma</p>
                     <div class="input-container">
-                        <label for="isbn">ISBN</label>
-                        <input type="text" name="isbn" id="isbn" placeholder="ISBN do livro" pattern="\d{3}-\d{10}" required>
+                        <input type="radio" name="turma" value="1° Info A"/> 1° Info A<br />
+                        <input type="radio" name="turma" value="1° Info B"/> 1° Info B<br />
+                        <input type="radio" name="turma" value="2° Info A"/> 2° Info A<br />
+                        <input type="radio" name="turma" value="2° Info B" required/> 2° Info B<br />
                     </div>
 
-                    <div class="input-container">
-                        <label for="ano">Ano</label>
-                        <input type="number" name="ano" id="ano" placeholder="Ano de publicação" required>
-                    </div>
-                    
-                    <div class="input-container">
-                        <label for="paginas">Páginas</label>
-                        <input type="number" name="paginas" id="paginas" placeholder="Número de páginas" required>
-                    </div>
-            
+                    <input type="submit" value="Verificar e enviar">
+
                 </fieldset>
             </form>
         </section>
     </main>
 </body>
+
 </html>
