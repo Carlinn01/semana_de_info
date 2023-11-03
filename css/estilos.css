@@ -19,9 +19,8 @@ body {
 
 
 header {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgb(10, 10, 10);
     /* Fundo semi-transparente para melhor legibilidade. */
-    color: #922f2f;
     text-align: center;
     padding: 10px 0;
     display: flex;
@@ -42,8 +41,10 @@ nav ul {
 }
 
 nav ul li {
-    display: inline; /* Para exibir os itens de menu na mesma linha */
-    margin-right: 10px; /* Espaço entre os itens de menu, ajuste conforme necessário */
+    display: inline;
+    /* Para exibir os itens de menu na mesma linha */
+    margin-right: 10px;
+    /* Espaço entre os itens de menu, ajuste conforme necessário */
 }
 
 nav li {
@@ -59,10 +60,10 @@ nav li {
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
     /* Fundo semi-transparente para melhor legibilidade. */
     padding: 20px;
-    margin: 20px auto;
+    margin: 55px auto;
     max-width: 1700px;
     text-align: center;
 }
@@ -76,8 +77,10 @@ footer {
 }
 
 .logo img {
-    max-width: 100px; /* Ajuste o tamanho máximo conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100px;
+    /* Ajuste o tamanho máximo conforme necessário */
+    height: auto;
+    /* Mantém a proporção da imagem */
     justify-content: space-beetween;
     display: flex;
     padding: 10px;
@@ -89,8 +92,8 @@ footer {
 }
 
 .fundo-parceiro {
-    background-color: black;
-    margin: 20px;
+    background-color: rgb(170, 22, 22); /*n muda*/
+    margin: 200px;
 }
 
 .jogos {
@@ -107,75 +110,113 @@ footer {
 }
 
 .col-3 {
-    width: 25%;}
+    width: 25%;
+}
+
 .col-4 {
-    width: 33.33%;}
+    width: 33.33%;
+}
+
 .col-5 {
-    width: 41.66%;}
+    width: 41.66%;
+}
+
 .col-6 {
-    width: 50%;}
+    width: 50%;
+}
+
 .col-7 {
-    width: 58.33%;}
+    width: 58.33%;
+}
+
 .col-8 {
-    width: 66.66%;}
+    width: 66.66%;
+}
+
 .col-9 {
-    width: 75%;}
+    width: 75%;
+}
+
 .col-10 {
-    width: 83.33%;}
+    width: 83.33%;
+}
+
 .col-11 {
-    width: 91.66%;}
+    width: 91.66%;
+}
+
 .col-12 {
-    width: 100%;}
+    width: 100%;
+}
 
-    .container {
-        width: 100%;
-        max-width: 1200px; /* Largura máxima do container, você pode ajustar conforme necessário */
-        margin: 0 auto; /* Centraliza o container na página */
-        padding: 20px; /* Adiciona algum espaço interno para espaçamento visual */
-      }
+.container {
+    width: 100%;
+    max-width: 1200px;
+    /* Largura máxima do container, você pode ajustar conforme necessário */
+    margin: 0 auto;
+    /* Centraliza o container na página */
+    padding: 20px;
+    /* Adiciona algum espaço interno para espaçamento visual */
+}
 
-      .day {
-        background-color: #f0f0f0;
-        padding: 10px;
-        border: 1px solid #ccc;
-        margin-bottom: 10px;
-    }
-
-    .event {
-        margin-bottom: 10px;
-    }
-
-    .button {
-        display: inline-block;
-        padding: 5px 10px;
-        background-color: #007BFF;
-        color: #fff;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333; /* Cor de fundo do menu, ajuste conforme necessário */
-        z-index: 100; /* Certifique-se de que o menu esteja acima de outros elementos */
-    }
+.day {
+    background-color: #fcfafa;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
     
-    .menu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .menu ul li {
-        display: inline;
-        margin-right: 20px; /* Espaçamento entre os itens do menu, ajuste conforme necessário */
-    }
-    
-    .menu a {
-        text-decoration: none;
-        color: #fff; /* Cor do texto do menu, ajuste conforme necessário */
-    }
+}
+
+.event {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 2px 2px;
+    background-color: #083341;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: ;
+    background-color: #333;
+    /* Cor de fundo do menu, ajuste conforme necessário */
+    z-index: 100;
+    /* Certifique-se de que o menu esteja acima de outros elementos */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+    /* Espaçamento entre os itens do menu, ajuste conforme necessário */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    /* Cor do texto do menu, ajuste conforme necessário */
+}
+
+.maratona {
+    margin-top: 50px;
+}
+
+img {
+    display: block;
+    margin: 0px auto;
+}
+
