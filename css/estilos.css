@@ -88,19 +88,18 @@ footer {
 
 
 .parceiros {
-    margin: 30px;
+    margin: 20px;
 }
 
 .fundo-parceiro {
     background-color: rgb(170, 22, 22); /*n muda*/
-    margin: 200px;
 }
 
 .jogos {
     width: 33.33%;
 }
 
-/* Sistema de Grid com 12 Colunas */
+
 .col-1 {
     width: 8.33%;
 }
