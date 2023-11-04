@@ -89,6 +89,7 @@ footer {
 
 .parceiros {
     margin: 20px;
+    display: inline
 }
 
 .fundo-parceiro {
@@ -185,7 +186,6 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: ;
     background-color: #333;
     /* Cor de fundo do menu, ajuste conforme necessário */
     z-index: 100;
