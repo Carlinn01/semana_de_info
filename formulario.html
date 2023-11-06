@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -36,7 +35,7 @@
 
                     <div class="input-container">
                         <label for="CPF">CPF</label>
-                        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                        <input type="text" id="CPF" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
                         placeholder="Digite seu CPF" required
                         title="Digite um CPF no formato: xxx.xxx.xxx-xx">
                     </div>
@@ -47,13 +46,16 @@
                     </div>
 
                     <div class="input-container">
-                        <p>Sua turma</p>
-                        <input type="radio" name="turma" value="1° Info A" required> 1° Info A<br>
-                        <input type="radio" name="turma" value="1° Info B"> 1° Info B<br>
-                        <input type="radio" name="turma" value="2° Info A"> 2° Info A<br>
-                        <input type="radio" name="turma" value="2° Info B"> 2° Info B<br>
-                    </div>
-                    
+                        <label for="turma">turma</label>
+                        <select name="turma" id="turma" required>
+                            <option value="1 info A">1° Info A</option>
+                            <option value="1 info B">1° Info B</option>
+                            <option value="2° Info A">2° Info A</option>
+                            <option value="2° Info B">2° Info B</option>
+                            <option value="3° Info A">3° Info A</option>
+                            <option value="3° Info B">3° Info b</option>
+                        </select>
+
                     <input type="submit" value="Verificar e enviar">
                 </fieldset>
             </form>
@@ -82,11 +84,11 @@
 function validateForm() {
                 const nome = getValueById("Nome");
                 const matricula = getValueById("Matricula");
-                const cpf = getValueById("cpf");
+                const cpf = getValueById("CPF");
                 const email = getValueById("Email");
-                const turma = document.querySelector('input[name="turma"]');
-
-                if (nome && matricula && cpf && email && turma.checked) {
+                const turma = getValueById("turma");
+                console.log(nome+matricula+cpf+email+turma)
+                if (nome && matricula && cpf && email && turma) {
                     return true;
                 } else {
                     alert("Por favor, preencha todos os campos obrigatórios.");
