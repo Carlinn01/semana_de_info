@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro para semana info</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
     <header>
         <h1>Cadastre-se</h1>
@@ -20,19 +18,19 @@
 
     <main>
         <section class="container">
-            <form>
+            <form id="registrationForm">
                 <fieldset>
                     <legend>Cadastro para semana de info</legend>
 
                     <div class="input-container">
-                        <label for="nome">Nome Completo</label>
+                        <label for="Nome">Nome Completo</label>
                         <input type="text" name="Nome" id="Nome" placeholder="Seu Nome Completo" required autofocus>
                     </div>
 
                     <div class="input-container">
-                        <label for="Matrícula">Matrícula</label>
-                        <input type="number" name="Matrícula" 
-                        id="Matrícula" placeholder="Matrícula" required
+                        <label for="Matricula">Matrícula</label>
+                        <input type="number" name="Matricula" 
+                        id="Matricula" placeholder="Matrícula" required
                         title="Digite sua Matrícula de 10 dígitos">
                     </div>
 
@@ -41,28 +39,62 @@
                         <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
                         placeholder="Digite seu CPF" required
                         title="Digite um CPF no formato: xxx.xxx.xxx-xx">
-                        
+                    </div>
+                    
+                    <div class= "input-container">
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="Email" placeholder="Email" required>
                     </div>
 
                     <div class="input-container">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <p>Sua turma</p>
+                        <input type="radio" name="turma" value="1° Info A" required> 1° Info A<br>
+                        <input type="radio" name="turma" value="1° Info B"> 1° Info B<br>
+                        <input type="radio" name="turma" value="2° Info A"> 2° Info A<br>
+                        <input type="radio" name="turma" value="2° Info B"> 2° Info B<br>
                     </div>
-
-                    <p>Sua turma</p>
-                    <div class="input-container">
-                        <input type="radio" name="turma" value="1° Info A"/> 1° Info A<br />
-                        <input type="radio" name="turma" value="1° Info B"/> 1° Info B<br />
-                        <input type="radio" name="turma" value="2° Info A"/> 2° Info A<br />
-                        <input type="radio" name="turma" value="2° Info B" required/> 2° Info B<br />
-                    </div>
-
+                    
                     <input type="submit" value="Verificar e enviar">
-
                 </fieldset>
             </form>
+
+            <div id="successMessage" style="display: none;">
+                Inscrição efetuada com sucesso
+            </div>
         </section>
     </main>
-</body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("registrationForm");
+            const successMessage = document.getElementById("successMessage");
+    
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+    
+                if (validateForm()) {
+                    form.style.display = "none";
+                    successMessage.style.display = "block";
+                }
+            });
 
+            const getValueById = (id) => document.getElementById(id)?.value ?? null;
+
+function validateForm() {
+                const nome = getValueById("Nome");
+                const matricula = getValueById("Matricula");
+                const cpf = getValueById("cpf");
+                const email = getValueById("Email");
+                const turma = document.querySelector('input[name="turma"]');
+
+                if (nome && matricula && cpf && email && turma.checked) {
+                    return true;
+                } else {
+                    alert("Por favor, preencha todos os campos obrigatórios.");
+                    return false;
+                }
+            }   
+
+        });
+    </script>
+</body>
 </html>
