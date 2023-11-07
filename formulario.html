@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro para semana info</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="estilo.js"></script>
 </head>
 <body>
     <header>
@@ -16,90 +17,54 @@
     </header>
 
     <main>
-        <section class="container">
-            <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post" id="registrationForm">
-                <fieldset>
-                    <legend>Cadastro para semana de info</legend>
-
-                    <div class="input-container">
-                        <label for="Nome">Nome Completo</label>
-                        <input type="text" name="Nome" id="Nome" placeholder="Seu Nome Completo" required autofocus>
-                    </div>
-
-                    <div class="input-container">
-                        <label for="Matricula">Matrícula</label>
-                        <input type="number" name="Matricula" 
-                        id="Matricula" placeholder="Matrícula" required
-                        title="Digite sua Matrícula de 10 dígitos">
-                    </div>
-
-                    <div class="input-container">
-                        <label for="CPF">CPF</label>
-                        <input type="text" id="CPF" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
-                        placeholder="Digite seu CPF" required
-                        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
-                    </div>
-                    
-                    <div class= "input-container">
-                        <label for="Email">Email</label>
-                        <input type="email" name="Email" id="Email" placeholder="Email" required>
-                    </div>
-
-                    <div class="input-container">
-                        <label for="turma">turma</label>
-                        <select name="turma" id="turma" required>
-                            <option value="1 info A">1° Info A</option>
-                            <option value="1 info B">1° Info B</option>
-                            <option value="2° Info A">2° Info A</option>
-                            <option value="2° Info B">2° Info B</option>
-                            <option value="3° Info A">3° Info A</option>
-                            <option value="3° Info B">3° Info b</option>
-                        </select>
-
-                    <input type="submit" value="Verificar e enviar">
-                </fieldset>
-            </form>
-
-            <div id="successMessage" style="display: none;">
-                Inscrição efetuada com sucesso
-            </div>
-        </section>
+        <div>
+            <section class="container">
+                <form  name="inscricao">
+                    <fieldset>
+                        <legend>Inscrição para o Evento</legend>
+    
+                        <div class="input-container">
+                            <label for="nome">Nome do Aluno:</label>
+                            <input  placeholder="Nome Completo" type="text" id="nome" name="nome" required autofocus>
+                        </div>
+    
+                        <div class="input-container">
+                            <label for="matricula">Matrícula do Aluno:</label>
+                            <input type="number" id="matricula" name="matricula" pattern="\d{10}" placeholder="Deve conter 10 dígitos" required>
+                        </div>
+                        
+                        <div class="input-container">
+                            <label for="CPF">CPF:</label>
+                            <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required>
+                        </div>
+    
+                        <div class="input-container">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                        </div>
+    
+                        <!-- campo de seleção -->
+    
+                        <div class="input-container">
+                            <label for="turma">Turma:</label>
+                            <select name="turma" id="turma" required>
+                                <option value="">Selecione</option>
+                                <option value="1A">Info 1A</option>
+                                <option value="1B">Info 1B</option>
+                                <option value="2A">Info 2A</option>
+                                <option value="2B">Info 2B</option>
+                                <option value="3A">Info 3A</option>
+                                <option value="3B">Info 3B</option>
+                            </select>
+                        </div>
+                        <div class="actions">
+                            <button type="submit" onclick="validarFormulario(event)">Inscreva-se</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
     </main>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const form = document.getElementById("registrationForm");
-            const successMessage = document.getElementById("successMessage");
-    
-            form.addEventListener("submit", function(event) {
-                event.preventDefault();
-    
-                if (validateForm()) {
-                    form.style.display = "none";
-                    successMessage.style.display = "block";
-                }
-            });
-
-
-
-            const getValueById = (id) => document.getElementById(id)?.value ?? null;
-
-function validateForm() {
-                const nome = getValueById("Nome");
-                const matricula = getValueById("Matricula");
-                const cpf = getValueById("CPF");
-                const email = getValueById("Email");
-                const turma = getValueById("turma");
-                console.log(nome+matricula+cpf+email+turma)
-                if (nome && matricula && cpf && email && turma) {
-                    return true;
-                } else {
-                    alert("Por favor, preencha todos os campos obrigatórios.");
-                    return false;
-                }
-            }   
-
-        });
-
-    </script>
 </body>
 </html>
