@@ -79,24 +79,6 @@
                 }
             });
 
-            const getValueById = (id) => document.getElementById(id)?.value ?? null;
-
-function validateForm() {
-                const nome = getValueById("Nome");
-                const matricula = getValueById("Matricula");
-                const cpf = getValueById("CPF");
-                const email = getValueById("Email");
-                const turma = getValueById("turma");
-                console.log(nome+matricula+cpf+email+turma)
-                if (nome && matricula && cpf && email && turma) {
-                    return true;
-                } else {
-                    alert("Por favor, preencha todos os campos obrigatórios.");
-                    return false;
-                }
-            }   
-
-        });
 
 
     </script>
