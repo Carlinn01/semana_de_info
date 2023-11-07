@@ -60,7 +60,7 @@ nav li {
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(17, 15, 15, 0.95);
     /* Fundo semi-transparente para melhor legibilidade. */
     padding: 20px;
     margin: 55px auto;
@@ -290,4 +290,6 @@ body {
     transform: scale(1.05);
 }
 
-
+.formula {
+    padding: 200px;
+}

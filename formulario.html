@@ -5,6 +5,7 @@
     <title>Cadastro para semana info</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css"">
     <script src="estilo.js"></script>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
 </head>
 <body>
     <header>
@@ -17,36 +18,36 @@
     </header>
 
     <main>
-        <div>
+        <div class="formula">
             <section class="container">
                 <form  name="inscricao">
                     <fieldset>
-                        <legend>Inscrição para o Evento</legend>
+                        <legend class="corfonte">Inscrição para o Evento</legend>
     
                         <div class="input-container">
-                            <label for="nome">Nome do Aluno:</label>
+                            <label for="nome" class="corfonte">Nome do Aluno:</label>
                             <input  placeholder="Nome Completo" type="text" id="nome" name="nome" required autofocus>
                         </div>
     
                         <div class="input-container">
-                            <label for="matricula">Matrícula do Aluno:</label>
+                            <label for="matricula" class="corfonte">Matrícula do Aluno:</label>
                             <input type="number" id="matricula" name="matricula" pattern="\d{10}" placeholder="Deve conter 10 dígitos" required>
                         </div>
                         
                         <div class="input-container">
-                            <label for="CPF">CPF:</label>
+                            <label for="CPF" class="corfonte">CPF:</label>
                             <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required>
                         </div>
     
                         <div class="input-container">
-                            <label for="email">E-mail:</label>
+                            <label for="email" class="corfonte">E-mail:</label>
                             <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
                         </div>
     
                         <!-- campo de seleção -->
     
                         <div class="input-container">
-                            <label for="turma">Turma:</label>
+                            <label for="turma" class="corfonte">Turma:</label>
                             <select name="turma" id="turma" required>
                                 <option value="">Selecione</option>
                                 <option value="1A">Info 1A</option>
@@ -55,6 +56,7 @@
                                 <option value="2B">Info 2B</option>
                                 <option value="3A">Info 3A</option>
                                 <option value="3B">Info 3B</option>
+                                <option value="Ciencia da Computacao">Ciência da Computação</option>
                             </select>
                         </div>
                         <div class="actions">
