@@ -72,12 +72,3 @@ localStorage.setItem("total_inscritos", totalInscritos);
 var numeroTotalInscritos = localStorage.getItem("total_inscritos");
 
 console.log("Número total de inscritos: " + numeroTotalInscritos);
-
-
-
-
-
-
-
-
-
